@@ -1,0 +1,54 @@
+%params:
+% 1: Job title
+% 2: Company name
+% 3: City
+% 4: Start Date
+% 5: End Date
+% 6: Description
+\newcommand{\Job}[6]{
+\begin{tabular}{p{2cm}|p{12.5cm}}
+\multicolumn{2}{c}{}\\
+\textsc{#5} & \textbf{#1} at \textsc{#2}, #3 \\
+\textsc{#4} & \footnotesize{#6}\\
+\end{tabular}
+}
+
+% params:
+%  1: Title
+%  2: Date
+%  3: Description
+\newcommand{\Training}[3]{
+\begin{tabular}{p{2cm}|p{12.5cm}}
+ \textsc{#2} & \textbf{#1}\\
+ &\footnotesize{#3}\\
+\end{tabular}
+}
+
+% params:
+%  1: Title
+%  2: Description
+%  3: Location
+\newcommand{\Conf}[3]{
+\begin{tabular}{p{2cm}|p{12.5cm}}
+&\textbf{#1}\\
+&#2 \\
+&Presented at:\\
+#3
+\end{tabular}}
+
+% params:
+%  1: year
+%  2: Location
+\newcommand{\ConfLocation}[2]{
+& \textsc{#1} | #2\\    
+}
+
+% params:
+%  1: Title
+%  2: URL
+\newcommand{\Publication}[2]{
+\begin{tabular}{p{2cm}|p{12.5cm}}
+&\textbf{#1}\\
+&\url{#2}\\
+\end{tabular}
+}
